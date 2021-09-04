@@ -1,4 +1,4 @@
-class HomeController < ApplicationController
+class StatController < ApplicationController
   def index
     @data_keys = [
       'APC',
@@ -7,6 +7,6 @@ class HomeController < ApplicationController
       'NNPP',
       
     ]
-    @data_values = [1, 1, 1, 1, 1]
+    @data_values = [0, 1, 0, 1, 0]
   end
 end

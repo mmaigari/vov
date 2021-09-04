@@ -1,19 +1,20 @@
+
 <body class="text-center">
 
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
      
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">Kaduna South Local Government Election </h1>
+        <h1 class="cover-heading">Kaduna South Local Government Councillors Election </h1>
         <p class="lead">4th September, 2021</p>
         <%if user_signed_in?%>
        
 
-        <canvas id="myChart" width="100px" height="70px" data-labels="<%= @data_keys %>" data-data="<%= @data_values %>" ></canvas>
+        <canvas id="myChart" width="200px" height="100px" data-labels="<%= @data_keys %>" data-data="<%= @data_values %>" ></canvas>
         <hr>
         <p class="lead">
           
-          <%= link_to "Councillors Election", stat_index_path, class:"btn btn-lg btn-secondary" %>
+          <%= link_to "Chairmanship Election", root_path, class:"btn btn-lg btn-secondary" %>
          
         </p>
         <%else%>
@@ -27,4 +28,3 @@
 
       
     </div>
-

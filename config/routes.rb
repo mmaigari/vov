@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'stat/index'
   resources :councillors
   resources :chairmen
   devise_for :users
