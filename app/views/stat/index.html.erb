@@ -1,28 +1,7 @@
 
 <body class="text-center">
 
-    <div align="center" class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-     
-<main>
-    <div align="center" class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Chairman Election</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title"><small class="text-muted fw-light">Summary</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>PDP:<em class="lead"></em></li>
-              <li>APC:<em class="lead"></em></li>
-              <li>SDP:<em class="lead"></em></li>
-              
-            <button type="button" class="w-100 btn btn-primary">View Raw Data</button>
-          </div>
-        </div>
-      </div>
-            
-    </div>
+   
 
 
 
@@ -30,6 +9,35 @@
         <h1 class="cover-heading">Kaduna South Local Government Councillors Election </h1>
         <p class="lead">4th September, 2021</p>
         <%if user_signed_in?%>
+
+        <hr>
+         <div align="center" class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+     
+<main>
+    <div align="center" class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h1 class="card-title pricing-card-title"><small class="text-muted fw-light">Summary</small></h1>
+          </div>
+          <div class="card-body">
+            
+            <ul class="list-unstyled mt-3 mb-4">
+              <li><h5 class="my-0 fw-normal">TOTAL VOTES:</h4><em class="lead">4,679</em></li><br>
+              <li><h5 class="my-0 fw-normal">PDP:</h5> = <em class="lead">2,757</em></li><br>
+              <li><h5 class="my-0 fw-normal">APC:</h5> = <em class="lead">1,865</em></li><br>
+              <li><h5 class="my-0 fw-normal">APGA:</h5> = <em class="lead">3</em></li><br>
+              <li><h5 class="my-0 fw-normal">PRP:</h5> = <em class="lead">91</em></li><br>
+              <li><h5 class="my-0 fw-normal">APM:</h5> = <em class="lead">1</em></li><br>
+              <li><h5 class="my-0 fw-normal">NNPP:</h5> =  <em class="lead">1</em></li><br>
+              
+              
+            <button type="button" class="w-100 btn btn-primary">View Raw Data</button>
+          </div>
+        </div>
+      </div>
+            
+    </div>
        
 
         <canvas id="myChart2" width="100px" height="70px" data-labels="<%= @data_keys %>" data-data="<%= @data_values %>" ></canvas>
