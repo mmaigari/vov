@@ -1,0 +1,2 @@
+class Chairman < ApplicationRecord
+end

@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Lga:</strong>
+  <%= @chairman.lga %>
+</p>
+
+<p>
+  <strong>Ward:</strong>
+  <%= @chairman.ward %>
+</p>
+
+<p>
+  <strong>Pollingunit:</strong>
+  <%= @chairman.pollingunit %>
+</p>
+
+<p>
+  <strong>Total votes:</strong>
+  <%= @chairman.total_votes %>
+</p>
+
+<p>
+  <strong>Valid votes:</strong>
+  <%= @chairman.valid_votes %>
+</p>
+
+<p>
+  <strong>Invalid votes:</strong>
+  <%= @chairman.invalid_votes %>
+</p>
+
+<p>
+  <strong>Apc:</strong>
+  <%= @chairman.apc %>
+</p>
+
+<p>
+  <strong>Apga:</strong>
+  <%= @chairman.apga %>
+</p>
+
+<p>
+  <strong>Apm:</strong>
+  <%= @chairman.apm %>
+</p>
+
+<p>
+  <strong>Nnpp:</strong>
+  <%= @chairman.nnpp %>
+</p>
+
+<p>
+  <strong>Pdp:</strong>
+  <%= @chairman.pdp %>
+</p>
+
+<p>
+  <strong>Prp:</strong>
+  <%= @chairman.prp %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @chairman.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_chairman_path(@chairman) %> |
+<%= link_to 'Back', chairmen_path %>

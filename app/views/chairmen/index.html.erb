@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Chairmen</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lga</th>
+      <th>Ward</th>
+      <th>Pollingunit</th>
+      <th>Total votes</th>
+      <th>Valid votes</th>
+      <th>Invalid votes</th>
+      <th>Apc</th>
+      <th>Apga</th>
+      <th>Apm</th>
+      <th>Nnpp</th>
+      <th>Pdp</th>
+      <th>Prp</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @chairmen.each do |chairman| %>
+      <tr>
+        <td><%= chairman.lga %></td>
+        <td><%= chairman.ward %></td>
+        <td><%= chairman.pollingunit %></td>
+        <td><%= chairman.total_votes %></td>
+        <td><%= chairman.valid_votes %></td>
+        <td><%= chairman.invalid_votes %></td>
+        <td><%= chairman.apc %></td>
+        <td><%= chairman.apga %></td>
+        <td><%= chairman.apm %></td>
+        <td><%= chairman.nnpp %></td>
+        <td><%= chairman.pdp %></td>
+        <td><%= chairman.prp %></td>
+        <td><%= chairman.user_id %></td>
+        <td><%= link_to 'Show', chairman %></td>
+        <td><%= link_to 'Edit', edit_chairman_path(chairman) %></td>
+        <td><%= link_to 'Destroy', chairman, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Chairman', new_chairman_path %>
