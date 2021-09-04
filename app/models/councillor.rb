@@ -1,0 +1,2 @@
+class Councillor < ApplicationRecord
+end

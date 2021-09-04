@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_03_232712) do
+ActiveRecord::Schema.define(version: 2021_09_04_073826) do
 
   create_table "chairmen", force: :cascade do |t|
     t.string "lga"
@@ -29,6 +29,25 @@ ActiveRecord::Schema.define(version: 2021_09_03_232712) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_chairmen_on_user_id"
+  end
+
+  create_table "councillors", force: :cascade do |t|
+    t.string "lga"
+    t.string "ward"
+    t.string "pollingunit"
+    t.integer "total_votes"
+    t.integer "valid_votes"
+    t.integer "invalid_votes"
+    t.integer "apc"
+    t.integer "apga"
+    t.integer "apm"
+    t.integer "nnpp"
+    t.integer "pdp"
+    t.integer "prp"
+    t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_councillors_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

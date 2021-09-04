@@ -1,0 +1,76 @@
+<%= form_with(model: councillor) do |form| %>
+  <% if councillor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(councillor.errors.count, "error") %> prohibited this councillor from being saved:</h2>
+
+      <ul>
+        <% councillor.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group" align="center">
+        
+      <%= form.select :lga, [ "Kaduna South"], { prompt:"Select a Local Government." }, { class:'btn btn-dark btn-block dropdown-toggle d-flex p-2' } %>
+
+    </div>
+    <hr>
+
+    <div class="field form-group" align="center">
+      <div align="center" class="field form-group">
+          
+          <%= form.select :ward, [ "Badiko", "Barnawa","Kakuri-gwari","Kakuri-hausa", "Makera","Sabon Gari North","Sabon Gari South","Television","Tudun Nupawa","Tudun Wada North","Tudun Wada South","Tudun Wada West","Unguwan Sunusi"], { prompt:"Select a ward." }, { class:'btn btn-dark btn-block dropdown-toggle d-flex p-2' } %>
+        </div>
+    </div>
+  <hr>
+    <div class="field form-group" align="center">
+      <%= form.select :pollingunit, [ "44 Main Gate", "A16 Badamasi Road","Kakuri-gwari","Kakuri-hausa", "Makera","Sabon Gari North","Sabon Gari South","Television","Tudun Nupawa","Tudun Wada North","Tudun Wada South","Tudun Wada West","Unguwan Sunusi"], { prompt:"Select a Polling Unit." }, { class:'btn btn-dark btn-block dropdown-toggle d-flex p-2' } %>
+    </div>
+  <hr>
+    <div class="field form-group" align="center">
+       <%= form.number_field :total_votes, placeholder:'Total Votes' %>
+    </div>
+  <hr>
+    <div class="field form-group" align="center">
+      <%= form.number_field :valid_votes, placeholder:'Valid Votes' %>
+  <hr>
+    <div class="field form-group" align="center">
+      <%= form.number_field :invalid_votes, placeholder:'Invalid Votes'  %>
+    </div>
+  <hr>
+    <div class="field form-group" align="center">
+      <%= form.number_field :apc, placeholder:'All Peoples Party (APC)' %>
+    </div>
+  <hr>
+    <div class="field form-group" align="center">
+      <%= form.number_field :apga, placeholder:'APGA' %>
+    </div>
+  <hr>
+    <div class="field form-group" align="center">
+      <%= form.number_field :apm, placeholder:'APM' %>
+    </div>
+  <hr>
+    <div class="field form-group" align="center">
+      <%= form.number_field :nnpp, placeholder:'NNPP' %>
+    </div>
+  <hr>
+    <div class="field form-group" align="center">
+
+      <%= form.number_field :pdp, placeholder:'Peoples Democratic Party (PDP)' %>
+    </div>
+  <hr>
+    <div class="field form-group" align="center">
+
+      <%= form.number_field :prp, placeholder:'PRP' %>
+    </div>
+  <hr>
+    <div class="field form-group" align="center">
+      <%= form.number_field :user_id %>
+    </div>
+  <hr>
+    <div class="actions" align="center">
+      <%= form.submit %>
+    </div>
+<% end %>

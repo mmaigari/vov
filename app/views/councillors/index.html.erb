@@ -1,0 +1,50 @@
+<h1 align="center" class="LEAD">Kaduna South Councillors Election</h1>
+
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>LGA</th>
+      <th>WARD</th>
+      <th>POLLING UNIT</th>
+      <th>VOTES</th>
+      <th>VALID</th>
+      <th>INVALID</th>
+      <th>APC</th>
+      <th>APGA</th>
+      <th>APM</th>
+      <th>NNPP</th>
+      <th>PDP</th>
+      <th>PRP</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @councillors.each do |councillor| %>
+      <tr>
+        <td><%= councillor.lga %></td>
+        <td><%= councillor.ward %></td>
+        <td><%= councillor.pollingunit %></td>
+        <td><%= councillor.total_votes %></td>
+        <td><%= councillor.valid_votes %></td>
+        <td><%= councillor.invalid_votes %></td>
+        <td><%= councillor.apc %></td>
+        <td><%= councillor.apga %></td>
+        <td><%= councillor.apm %></td>
+        <td><%= councillor.nnpp %></td>
+        <td><%= councillor.pdp %></td>
+        <td><%= councillor.prp %></td>
+        <td><%= councillor.user_id %></td>
+        <td><%= link_to 'Show', councillor %></td>
+        <td><%= link_to 'Edit', edit_councillor_path(councillor) %></td>
+        <td><%= link_to 'Destroy', councillor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Election Data', new_councillor_path %>

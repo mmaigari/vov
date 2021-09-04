@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Lga:</strong>
+  <%= @councillor.lga %>
+</p>
+
+<p>
+  <strong>Ward:</strong>
+  <%= @councillor.ward %>
+</p>
+
+<p>
+  <strong>Pollingunit:</strong>
+  <%= @councillor.pollingunit %>
+</p>
+
+<p>
+  <strong>Total votes:</strong>
+  <%= @councillor.total_votes %>
+</p>
+
+<p>
+  <strong>Valid votes:</strong>
+  <%= @councillor.valid_votes %>
+</p>
+
+<p>
+  <strong>Invalid votes:</strong>
+  <%= @councillor.invalid_votes %>
+</p>
+
+<p>
+  <strong>Apc:</strong>
+  <%= @councillor.apc %>
+</p>
+
+<p>
+  <strong>Apga:</strong>
+  <%= @councillor.apga %>
+</p>
+
+<p>
+  <strong>Apm:</strong>
+  <%= @councillor.apm %>
+</p>
+
+<p>
+  <strong>Nnpp:</strong>
+  <%= @councillor.nnpp %>
+</p>
+
+<p>
+  <strong>Pdp:</strong>
+  <%= @councillor.pdp %>
+</p>
+
+<p>
+  <strong>Prp:</strong>
+  <%= @councillor.prp %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @councillor.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_councillor_path(@councillor) %> |
+<%= link_to 'Back', councillors_path %>
