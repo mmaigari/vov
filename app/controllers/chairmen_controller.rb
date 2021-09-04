@@ -25,7 +25,7 @@ class ChairmenController < ApplicationController
 
     respond_to do |format|
       if @chairman.save
-        format.html { redirect_to @chairman, notice: "Chairman was successfully created." }
+        format.html { redirect_to @chairman, notice: "Data uploaded successfully." }
         format.json { render :show, status: :created, location: @chairman }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ChairmenController < ApplicationController
   def update
     respond_to do |format|
       if @chairman.update(chairman_params)
-        format.html { redirect_to @chairman, notice: "Chairman was successfully updated." }
+        format.html { redirect_to @chairman, notice: "Successfully updated." }
         format.json { render :show, status: :ok, location: @chairman }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class ChairmenController < ApplicationController
   def destroy
     @chairman.destroy
     respond_to do |format|
-      format.html { redirect_to chairmen_url, notice: "Chairman was successfully destroyed." }
+      format.html { redirect_to chairmen_url, notice: "Data Erased" }
       format.json { head :no_content }
     end
   end

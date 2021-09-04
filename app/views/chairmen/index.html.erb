@@ -1,23 +1,21 @@
-<p id="notice"><%= notice %></p>
+<h1 align="center">Kaduna South Chairman Election</h1>
 
-<h1>Chairmen</h1>
-
-<table>
+<table class="table table-striped table-hover">
   <thead>
     <tr>
-      <th>Lga</th>
-      <th>Ward</th>
-      <th>Pollingunit</th>
-      <th>Total votes</th>
-      <th>Valid votes</th>
-      <th>Invalid votes</th>
-      <th>Apc</th>
-      <th>Apga</th>
-      <th>Apm</th>
-      <th>Nnpp</th>
-      <th>Pdp</th>
-      <th>Prp</th>
-      <th>User</th>
+      <th>LGA</th>
+      <th>WARD</th>
+      <th>POLLING UNIT</th>
+      <th>VOTES</th>
+      <th>VALID</th>
+      <th>INVALID</th>
+      <th>APC</th>
+      <th>APGA</th>
+      <th>APM</th>
+      <th>NNPP</th>
+      <th>PDP</th>
+      <th>PRP</th>
+      <th>USER ID</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -48,4 +46,4 @@
 
 <br>
 
-<%= link_to 'New Chairman', new_chairman_path %>
+<%= link_to 'Upload New Data', new_chairman_path, class:'btn btn-lg btn-secondary' %>
