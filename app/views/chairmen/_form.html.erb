@@ -12,15 +12,13 @@
   <% end %>
 
   <div class="field" align="center">
-    <%= form.label :lga %>
-    
+      
     <%= form.select :lga, [ "Kaduna South"], { prompt:"Select a Local Government." }, { class:'btn btn-dark btn-block dropdown-toggle d-flex p-2' } %>
 
   </div>
   <hr>
 
   <div class="field" align="center">
-    <%= form.label :ward %>
     <div align="center" class="field form-group">
         
         <%= form.select :ward, [ "Badiko", "Barnawa","Kakuri-gwari","Kakuri-hausa", "Makera","Sabon Gari North","Sabon Gari South","Television","Tudun Nupawa","Tudun Wada North","Tudun Wada South","Tudun Wada West","Unguwan Sunusi"], { prompt:"Select a ward." }, { class:'btn btn-dark btn-block dropdown-toggle d-flex p-2' } %>
@@ -28,8 +26,7 @@
   </div>
 <hr>
   <div class="field" align="center">
-    <%= form.label :pollingunit %>
-    <%= form.text_field :pollingunit %>
+    <%= form.select :pollingunit, [ "Badiko", "Barnawa","Kakuri-gwari","Kakuri-hausa", "Makera","Sabon Gari North","Sabon Gari South","Television","Tudun Nupawa","Tudun Wada North","Tudun Wada South","Tudun Wada West","Unguwan Sunusi"], { prompt:"Select a Polling Unit." }, { class:'btn btn-dark btn-block dropdown-toggle d-flex p-2' } %>
   </div>
 <hr>
   <div class="field" align="center">
@@ -40,11 +37,10 @@
   <div class="field" align="center">
     <%= form.label :valid_votes %>
     <%= form.number_field :valid_votes %>
-  </div>
 <hr>
   <div class="field" align="center">
     <%= form.label :invalid_votes %>
-    <%= form.number_field :invalid_votes %>
+    <%= form.number_field :invalid_votes  %>
   </div>
 <hr>
   <div class="field" align="center">
