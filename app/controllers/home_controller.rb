@@ -7,6 +7,6 @@ class HomeController < ApplicationController
       'NNPP',
       
     ]
-    @data_values = [987, 1024, 18, 12, 04]
+    @data_values = [4765, 5907, 91, 12]
   end
 end
