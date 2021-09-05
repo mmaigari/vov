@@ -44,9 +44,7 @@
         <td><%= chairman.bp %></td>
         <td><%= chairman.sdp %></td>
         <td><%= chairman.user_id %></td>
-        <td><%= link_to 'Show', chairman %></td>
-        <td><%= link_to 'Edit', edit_chairman_path(chairman) %></td>
-        <td><%= link_to 'Destroy', chairman, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td colspan="3"></td>
       </tr>
     <% end %>
   </tbody>
@@ -55,3 +53,4 @@
 <br>
 
 <%= link_to 'Upload New Data', new_chairman_path, class:'btn btn-lg btn-secondary' %>
+

@@ -4,10 +4,29 @@
      
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">Kaduna South Local Government Election </h1>
+        <h1 class="cover-heading">Kaduna South Local Government
+        <br>Chairmanship Election </h1>
         <p class="lead">4th September, 2021</p>
         <%if user_signed_in?%>
        
+       <div class="container">
+         <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+ 
+        <i class="bi bi-megaphone-fill" style="font-size: 3rem; color: dark;"></i>
+     <ul class="list-unstyled mt-3 mb-4">
+              <li><h5 class="my-0 fw-normal">TOTAL VOTES:</h4><em class="lead">7,879</em></li><br>
+              <li><h5 class="my-0 fw-normal">PDP:</h5><em class="lead">5,907</em></li><br>
+              <li><h5 class="my-0 fw-normal">APC:</h5> <em class="lead">4,765</em></li><br>
+              <li><h5 class="my-0 fw-normal">APGA:</h5> <em class="lead">43</em></li><br>
+              <li><h5 class="my-0 fw-normal">PRP:</h5> <em class="lead">91</em></li><br>
+              <li><h5 class="my-0 fw-normal">APM:</h5> <em class="lead">1</em></li><br>
+              <li><h5 class="my-0 fw-normal">NNPP:</h5>  <em class="lead">1</em></li><br>
+            </ul>
+      
+    </div>
+      </div>
+       </div>
 
         <canvas id="myChart" width="100px" height="70px" data-labels="<%= @data_keys %>" data-data="<%= @data_values %>" ></canvas>
         <hr>
